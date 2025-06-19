@@ -31,16 +31,16 @@ async def home(user_validation: ValidateUserDepsT):
 
 Test the project by running following commands:
 
-**Start the server:**
-
-```sh 
-make serve
-```
-
 **Install requirements:**
 
 ```sh 
 make install
+```
+
+**Start the server:**
+
+```sh 
+make serve
 ```
 
 **Run tests:**
