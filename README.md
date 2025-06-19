@@ -6,7 +6,7 @@ An example about use-case of DI in FastAPI application.
 
 ```python3
 async def validate_user(token: str = Query(), db: T = Depends(get_db)):
-    return user_api.validate(token) == True
+    return await user_api.validate(token)
 
 @app.get("/")
 async def home(user_validation: T = Depends(validate_user)):
